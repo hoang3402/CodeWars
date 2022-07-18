@@ -5,7 +5,7 @@ int makeNegative(int num)
 
 // không ok :|
 #include <cmath>
-int makeNegative(int num)
+int makeNegative2(int num)
 {
     return -abs(num);
 }
