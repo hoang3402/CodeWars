@@ -19,7 +19,7 @@ vector<int> move_zeroes(const vector<int>& input)
     return result;
 }
 
-auto move_zeroes(vector<int> v)
+auto move_zeroes_2(vector<int> v)
 {
     stable_partition(begin(v), end(v), negate());
     return v;
@@ -40,7 +40,7 @@ The size of the vector remains the same. The function fills with 0 the elements 
 
 #include <vector>
 
-std::vector<int> move_zeroes(const std::vector<int>& input)
+std::vector<int> move_zeroes_3(const std::vector<int>& input)
 {
     std::vector<int> v(input.size(), 0);
     int a = 0;
@@ -53,7 +53,7 @@ std::vector<int> move_zeroes(const std::vector<int>& input)
     return v;
 }
 
-auto move_zeroes(std::vector<int> v)
+auto move_zeroes_4(std::vector<int> v)
 {
     std::stable_partition(begin(v), end(v), [](auto x) { return x; });
     return v;
@@ -62,7 +62,7 @@ auto move_zeroes(std::vector<int> v)
 #include <algorithm>
 #include <vector>
 
-std::vector<int> move_zeroes(std::vector<int> input)
+std::vector<int> move_zeroes_5(std::vector<int> input)
 {
     std::fill(std::remove(input.begin(), input.end(), 0), input.end(), 0);
     return input;
@@ -70,7 +70,7 @@ std::vector<int> move_zeroes(std::vector<int> input)
 
 #include <vector>
 
-std::vector<int> move_zeroes(const std::vector<int>& input)
+std::vector<int> move_zeroes_6(const std::vector<int>& input)
 {
     std::vector<int> moved;
 
