@@ -14,7 +14,7 @@ int Modulo(int a, string b)
 
     // calculating mod of b with a to make
     // b like 0 <= b < a
-    for (int i = 0; i < b.length(); i++)
+    for (unsigned long i = 0; i < b.length(); i++)
         mod = (mod * 10 + b[i] - '0') % a;
 
     return mod; // return modulo
@@ -51,8 +51,7 @@ int last_digit(const string& str1, const string& str2)
 }
 
 #include <cmath>
-
-int last_digit(std::string str1, std::string str2)
+int last_digit_2(std::string str1, std::string str2)
 {
     // If power = zero, return 1
     if (str2 == "0")
@@ -72,7 +71,6 @@ int last_digit(std::string str1, std::string str2)
 }
 
 #include <string>
-
 constexpr int powers[10][4] = {
     /*0*/ { 0, 0, 0, 0 },
     /*1*/ { 1, 1, 1, 1 },
@@ -86,7 +84,7 @@ constexpr int powers[10][4] = {
     /*9*/ { 1, 9, 1, 9 }
 };
 
-int last_digit(std::string str1, std::string str2)
+int last_digit_3(std::string str1, std::string str2)
 {
     if (str2 == "0")
         return 1;
@@ -102,7 +100,7 @@ int last_digit(std::string str1, std::string str2)
 #include <cmath>
 #include <string>
 
-int last_digit(const std::string& sa, const std::string& sb)
+int last_digit_4(const std::string& sa, const std::string& sb)
 {
     if (sb == "0")
         return 1;
