@@ -64,6 +64,9 @@
   "portsAttributes": {
     "5555": {
       "label": "Tabnine"
+    },
+    "49152": {
+      "label": "Tabnine deep local"
     }
   }
 }
