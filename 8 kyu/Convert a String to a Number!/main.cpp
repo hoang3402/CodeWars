@@ -10,11 +10,11 @@ int string_to_number(const std::string& s)
 
 int char_to_digit(char ch);
 
-int string_to_number(const std::string& input)
+int string_to_number2(const std::string& input)
 {
     int result = 0;
 
-    for (int i = 0; i < input.length(); i++) {
+    for (unsigned long i = 0; i < input.length(); i++) {
         char current = input[input.length() - 1 - i];
         if (current == '-')
             result = -result;
