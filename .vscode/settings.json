@@ -74,5 +74,6 @@
     "typeindex": "cpp",
     "valarray": "cpp",
     "variant": "cpp"
-  }
+  },
+  "compile-hero.disable-compile-files-on-did-save-code": false
 }
