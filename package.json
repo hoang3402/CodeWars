@@ -1,9 +1,11 @@
 {
+  "type": "module",
   "scripts": {
     "test": "mocha"
   },
   "dependencies": {
     "chai": "^4.3.6",
+    "jest": "^28.1.3",
     "mocha": "^10.0.0"
   }
 }
