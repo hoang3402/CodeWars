@@ -1,0 +1,45 @@
+body {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+.logo {
+  position: relative;
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 95.6%;
+  /* or 34px */
+
+  color: #4b4b4b;
+}
+
+.Choose {
+  position: absolute;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  position: absolute;
+  right: 44px;
+}
+
+.menu-heading {
+}
+
+.header {
+}
+
+.contenter {
+}
+
+.footer {
+}
