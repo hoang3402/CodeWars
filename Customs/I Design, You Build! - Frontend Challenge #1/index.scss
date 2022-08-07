@@ -10,8 +10,6 @@ body {
   height: 60vw;
   width: 100vw;
   background: linear-gradient(289.6deg, #0c0c0c 0%, #2c4550 98.22%);
-  border: 1px solid #ffffff;
-  border-radius: 3%;
 
   .warpper {
     height: 100%;
@@ -19,9 +17,10 @@ body {
     position: relative;
 
     .left {
+      display: inline-block;
       position: absolute;
       height: 100%;
-      width: 14%;
+      width: 10%;
 
       .logo {
         font-family: "Poppins";
@@ -48,10 +47,11 @@ body {
     }
 
     .right {
+      display: inline-block;
       position: absolute;
-      left: 14%;
       height: 100%;
-      width: 86%;
+      width: 90%;
+      right: 0%;
 
       border-left: 1px solid #ffffff;
 
@@ -102,8 +102,10 @@ body {
         &-left {
           max-width: 60%;
           margin-left: 3rem;
+          z-index: 2;
 
           h1 {
+            display: inline-block;
             font-size: 6rem;
             line-height: 1;
 
@@ -112,9 +114,11 @@ body {
             font-weight: 700;
             // font-size: 72px;
             // line-height: 79px;
+            backdrop-filter: blur(50px);
           }
 
           p {
+            display: inline-block;
             max-width: 60%;
             margin-top: 3rem;
 
@@ -123,6 +127,8 @@ body {
             font-weight: 500;
             font-size: 18px;
             line-height: 27px;
+
+            backdrop-filter: blur(50px);
           }
         }
 
@@ -133,14 +139,17 @@ body {
 
           height: auto;
           width: auto;
+
+          z-index: 1;
         }
       }
 
       .footer {
-        position: absolute;
+        // position: absolute;
         bottom: 0%;
+        box-sizing: 1438px;
+        z-index: 2;
 
-        border-left: 1px solid #ffffff;
         background-image: radial-gradient(
           100% 2631.09% at 0% 0%,
           rgba(0, 0, 0, 0.42) 0%,
@@ -152,6 +161,28 @@ body {
         display: flex;
         align-items: center;
         gap: 3rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+
+        span {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 36px;
+        }
+
+        p {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 31px;
+        }
+
+        &-lorem {
+          width: 427px;
+        }
       }
     }
   }
