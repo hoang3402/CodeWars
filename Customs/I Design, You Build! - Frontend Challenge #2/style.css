@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  font-family: "Inter";
+  color: #ffffff;
+}
+
+body {
+  position: relative;
+  background: #131313;
+}
+body header {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 208px;
+}
+body header .logo {
+  display: inline;
+}
+body header .logo h2 {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+}
+body header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 61px;
+  list-style-type: none;
+}
+body header nav ul a {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+body header .dashboard,
+body header button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 46px;
+  gap: 10px;
+  width: 165px;
+  height: 50px;
+  background: #242424;
+  border-radius: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+body main .slogan h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+body main .slogan h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(270deg, #a5d9ff 7.6%, #7399fb 94.15%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+body main .slogan p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #b0b0b0;
+}
+body main .Try-this-app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+body main .Try-this-app button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 46px;
+  gap: 10px;
+  background: #2104d8;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+body footer {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */
