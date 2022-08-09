@@ -10,12 +10,12 @@ body {
 
   header {
     display: flex;
-    position: relative;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 0px;
-    gap: 208px;
+    gap: 15%;
+    width: 100%;
 
     .logo {
       display: inline;
@@ -28,6 +28,7 @@ body {
         display: flex;
         align-items: center;
         letter-spacing: 0.03em;
+        cursor: pointer;
       }
     }
 
@@ -45,17 +46,11 @@ body {
       }
     }
 
-    .dashboard,
     button {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
+      border: none;
       align-items: center;
       padding: 14px 46px;
       gap: 10px;
-
-      width: 165px;
-      height: 50px;
 
       background: #242424;
       border-radius: 10px;
@@ -68,7 +63,6 @@ body {
       /* identical to box height */
 
       letter-spacing: 0.03em;
-
       cursor: pointer;
     }
   }
@@ -76,6 +70,9 @@ body {
   main {
     .slogan {
       h1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         font-family: "Inter";
         font-style: normal;
         font-weight: 700;
@@ -84,11 +81,13 @@ body {
         display: flex;
         align-items: center;
         text-align: center;
-
-        color: #ffffff;
+        margin-bottom: 0%;
       }
 
       h2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         font-family: "Inter";
         font-style: normal;
         font-weight: 700;
@@ -97,12 +96,18 @@ body {
         display: flex;
         align-items: center;
         text-align: center;
+        margin-top: 0%;
 
         background: linear-gradient(270deg, #a5d9ff 7.6%, #7399fb 94.15%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
       }
+    }
+
+    .description {
+      display: flex;
+      justify-content: center;
 
       p {
         font-family: "Poppins";
@@ -126,6 +131,7 @@ body {
       margin-bottom: 2rem;
 
       button {
+        border: none;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -152,6 +158,37 @@ body {
         color: #ffffff;
       }
     }
+
+    .blob-wapper {
+      width: 421px;
+      height: 431px;
+      display: inline;
+
+      #bolb-1 {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        background-color: #2104d8;
+        border-radius: 50%;
+        left: 20%;
+        top: 20%;
+        -webkit-filter: blur(624px);
+        filter: blur(624px);
+        z-index: -1;
+      }
+
+      #bolb-2 {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        background-color: #2104d8;
+        border-radius: 50%;
+        left: 20%;
+        top: 30%;
+        filter: blur(140px);
+        z-index: -1;
+      }
+    }
   }
 
   footer {
@@ -159,5 +196,9 @@ body {
     height: auto;
     display: flex;
     justify-content: center;
+
+    img {
+      width: 80%;
+    }
   }
 }

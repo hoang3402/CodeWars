@@ -10,12 +10,12 @@ body {
 }
 body header {
   display: flex;
-  position: relative;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 0px;
-  gap: 208px;
+  gap: 15%;
+  width: 100%;
 }
 body header .logo {
   display: inline;
@@ -29,6 +29,7 @@ body header .logo h2 {
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
+  cursor: pointer;
 }
 body header nav ul {
   display: flex;
@@ -43,16 +44,11 @@ body header nav ul a {
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
 }
-body header .dashboard,
 body header button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  border: none;
   align-items: center;
   padding: 14px 46px;
   gap: 10px;
-  width: 165px;
-  height: 50px;
   background: #242424;
   border-radius: 10px;
   font-family: "Inter";
@@ -65,6 +61,9 @@ body header button {
   cursor: pointer;
 }
 body main .slogan h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
@@ -73,9 +72,12 @@ body main .slogan h1 {
   display: flex;
   align-items: center;
   text-align: center;
-  color: #ffffff;
+  margin-bottom: 0%;
 }
 body main .slogan h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
@@ -84,12 +86,17 @@ body main .slogan h2 {
   display: flex;
   align-items: center;
   text-align: center;
+  margin-top: 0%;
   background: linear-gradient(270deg, #a5d9ff 7.6%, #7399fb 94.15%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-body main .slogan p {
+body main .description {
+  display: flex;
+  justify-content: center;
+}
+body main .description p {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -107,6 +114,7 @@ body main .Try-this-app {
   margin-bottom: 2rem;
 }
 body main .Try-this-app button {
+  border: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -127,9 +135,39 @@ body main .Try-this-app button {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
+body main .blob-wapper {
+  width: 421px;
+  height: 431px;
+  display: inline;
+}
+body main .blob-wapper #bolb-1 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  background-color: #2104d8;
+  border-radius: 50%;
+  left: 20%;
+  top: 20%;
+  filter: blur(624px);
+  z-index: -1;
+}
+body main .blob-wapper #bolb-2 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background-color: #2104d8;
+  border-radius: 50%;
+  left: 20%;
+  top: 30%;
+  filter: blur(140px);
+  z-index: -1;
+}
 body footer {
   width: auto;
   height: auto;
   display: flex;
   justify-content: center;
+}
+body footer img {
+  width: 80%;
 }/*# sourceMappingURL=style.css.map */
