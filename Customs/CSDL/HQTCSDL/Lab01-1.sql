@@ -184,6 +184,7 @@ INSERT INTO THIETKE
 VALUES
     ('KTS01', '1', '85'),
     ('KTS02', '2', '25'),
+    ('KTS01', '3', '45'),
     ('KTS03', '5', '120'),
     ('KTS01', '5', '95'),
     ('KTS02', '4', '35');
@@ -197,3 +198,4 @@ FROM THIETKE;
 -- DROP TABLE CHUNHAN;
 -- DROP TABLE CONGNHAN;
 -- DROP TABLE CONGTRINH;
+-- DROP TABLE THAMGIA;
