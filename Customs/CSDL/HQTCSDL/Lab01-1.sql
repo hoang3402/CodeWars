@@ -1,7 +1,11 @@
 -- QUẢN LÝ CÔNG TRÌNH [Tạo bảng và thêm dữ liệu]
 
 GO
-CREATE DATABASE QLCONGTRINH 
+IF DB_ID('QLSINHVIEN') IS NULL
+BEGIN
+    PRINT N'Đang tạo database'
+    CREATE DATABASE QLCONGTRINH
+END
 GO
 USE QLCONGTRINH
 SET DATEFORMAT DMY
@@ -17,8 +21,8 @@ CREATE TABLE KTS
     NoiTN NVARCHAR(50),
     DiaChiKTS NVARCHAR(50)
 )
-GO 
--- CHUTHAU(MaChuThau, HoTen, SDT, DiaChiThau): Mỗi chủ thầu xây dựng công trình đều có mà, tên thầu, một số điện thoại và một địa chỉ. 
+GO
+-- CHUTHAU(MaChuThau, HoTen, SDT, DiaChiThau): Mỗi chủ thầu xây dựng công trình đều có mà, tên thầu, một số điện thoại và một địa chỉ.
 GO
 CREATE TABLE CHUTHAU
 (
@@ -28,7 +32,7 @@ CREATE TABLE CHUTHAU
     DiaChiThau NVARCHAR(50)
 )
 GO
--- CHUNHAN(MaChu, TenChu, DiaChiChu): Mỗi chủ nhân của một công trình đều có mã, tên chủ nhân và một địa chỉ. 
+-- CHUNHAN(MaChu, TenChu, DiaChiChu): Mỗi chủ nhân của một công trình đều có mã, tên chủ nhân và một địa chỉ.
 GO
 CREATE TABLE CHUNHAN
 (
@@ -63,7 +67,7 @@ CREATE TABLE CONGTRINH
     FOREIGN KEY (MaChuThau) REFERENCES CHUTHAU(MaChuThau),
 )
 GO
--- THAMGIA(MaCN, SoCT, NgayTG, SoNgayTG): Một công nhân có thể tham gia xây dựng nhiều công trình, và một công trình cũng có nhiều công nhân tham gia. Khi một công nhân tham gia vào một công trình nào đó sẽ được ghi nhận lại ngày bắt đầu tham gia và số ngày tham gia. 
+-- THAMGIA(MaCN, SoCT, NgayTG, SoNgayTG): Một công nhân có thể tham gia xây dựng nhiều công trình, và một công trình cũng có nhiều công nhân tham gia. Khi một công nhân tham gia vào một công trình nào đó sẽ được ghi nhận lại ngày bắt đầu tham gia và số ngày tham gia.
 GO
 CREATE TABLE THAMGIA
 (
@@ -73,7 +77,7 @@ CREATE TABLE THAMGIA
     SoNgayTG INT,
 )
 GO
--- THIETKE(MaKTS, SoCT, ThuLao): Một kiến trúc sư có thể thiết kế nhiều công trình, mỗi công trình cũng có thể do nhiều kiến trúc sư cùng thiết kế. Khi một kiến trúc sư thiết kế một công trình sẽ có một thù lao tương ứng (đơn vị tính là triệu). 
+-- THIETKE(MaKTS, SoCT, ThuLao): Một kiến trúc sư có thể thiết kế nhiều công trình, mỗi công trình cũng có thể do nhiều kiến trúc sư cùng thiết kế. Khi một kiến trúc sư thiết kế một công trình sẽ có một thù lao tương ứng (đơn vị tính là triệu).
 GO
 CREATE TABLE THIETKE
 (
