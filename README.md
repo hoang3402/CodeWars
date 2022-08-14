@@ -6,5 +6,7 @@ Giải codewar :3
 
 ```
 sudo apt install fonts-firacode
+```
+```
 fc-cache -f -v
 ```
