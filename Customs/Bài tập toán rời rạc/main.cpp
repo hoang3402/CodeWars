@@ -13,7 +13,7 @@ int main()
     vector<string> b = { "Tao", "Le", "Dao", "Man", "Oi" };
     int n = b.size();
 
-    LietKeHoanViTapCon(b, n);
+    LietKeHoanViTapCon2(b, n);
 
     return 0;
 }

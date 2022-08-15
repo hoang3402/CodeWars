@@ -42,3 +42,26 @@ void LietKeHoanViTapCon(vector<string> a, int n)
         cout << endl;
     }
 }
+
+void LietKeHoanViTapCon2(vector<int> a, int n)
+{
+    for (int i = 0; i < (n << 1); i++) {
+        for (int j = 0; j < n; j++) {
+            if (i & (1 << j)) {
+                cout << a[j] << " ";
+            }
+        }
+    }
+}
+
+void LietKeHoanViTapCon2(vector<string> a, int n)
+{
+    for (int i = 0; i < (1 << n); i++) {
+        for (int j = 0; j < n; j++) {
+            if (i & (1 << j)) {
+                cout << a[j] << " ";
+            }
+        }
+        cout << endl;
+    }
+}
