@@ -56,7 +56,7 @@
   ],
 
   // "oryx build" will automatically install your dependencies and attempt to build your project
-  "postCreateCommand": "oryx build -p virtualenv_name=.venv --log-file /tmp/oryx-build.log --manifest-dir /tmp || echo 'Could not auto-build. Skipping.' && pip install FlawFinder && pip install lizard && sudo apt install fonts-firacode && fc-cache -f -v",
+  "postCreateCommand": "oryx build -p virtualenv_name=.venv --log-file /tmp/oryx-build.log --manifest-dir /tmp || echo 'Could not auto-build. Skipping.' && pip install FlawFinder && pip install lizard && sudo apt install fonts-firacode && sudo apt-get -y install fonts-jetbrains-mono && fc-cache -f -v",
 
   // Create ports
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
