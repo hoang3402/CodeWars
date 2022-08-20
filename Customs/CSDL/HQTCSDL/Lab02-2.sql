@@ -693,6 +693,7 @@ select
 from dbo.SINHVIEN
 
 -- b. Tạo một VIEW có tên là DSSV01 với nội dung truy vấn (câu a) ở trên. Mở cửa sổ Object Explorer, xem VIEW vừa tạo lưu ở đâu? Xem kết quả dữ liệu từ VIEW vừa tạo (SELECT * FROM DSSV01) và so sánh với kết quả ở câu a; có khác nhau không? Tại sao? 
+go
 create view DSSV01
 as
     select
@@ -703,7 +704,7 @@ as
  , SINHVIEN.GioiTinh
  , YEAR(SINHVIEN.NgaySinh) as NamSinh
     from dbo.SINHVIEN
-
+go
 -- View được lưu ở QLSINHVIEN/Views
 -- Kết quả của view giống với kết quả câu a
 -- Mỗi lần người dùng truy vấn một View. Bộ máy của CSDL sẽ sử dụng câu lệnh SQL của View để tạo lại dữ liệu, do vậy dữ liệu của View luôn được cập nhật.
