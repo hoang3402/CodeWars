@@ -1,6 +1,6 @@
 -- QUẢN LÝ ĐỀ ÁN [Giải quyết các câu hỏi]
 
-CREATE DATABASE Lab03;
+create database Lab03;
 
-USE Lab03;
+use Lab03;
 

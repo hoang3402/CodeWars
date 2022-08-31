@@ -1,14 +1,14 @@
 -- QUẢN LÝ ĐỀ ÁN [Tạo bảng và thêm dữ liệu]
 
-USE master
-GO
-IF NOT EXISTS (
-    SELECT name
-FROM sys.databases
-WHERE name = N'QLDEAN'
+use master
+go
+if not exists (
+    select name
+from sys.databases
+where name = N'QLDEAN'
 )
-CREATE DATABASE QLDEAN
-GO
+create database QLDEAN
+go
 
 -- NHANVIEN (MaNV, HoNV, TenLot, TenNV, NgaySinh, DiaChi, Phai, Luong, MaNQL, MaPhong) 
 
@@ -24,4 +24,4 @@ GO
 -- PHANCONG(MaNV,MaDA,ThoiGian) 
 
 
-DROP DATABASE QLDEAN
+drop database QLDEAN

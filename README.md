@@ -16,6 +16,12 @@ JetBrains Mono
 sudo apt-get -y install fonts-jetbrains-mono
 ```
 
+Cascadia Code
+
+```
+apt install fonts-cascadia-code
+```
+
 Reset cache for fonts
 
 ```

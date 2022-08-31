@@ -1,114 +1,114 @@
 -- QUẢN LÝ SINH VIÊN [Tạo bảng và thêm dữ liệu]
 
-GO
-IF DB_ID('QLSINHVIEN') IS NULL
-BEGIN
-    PRINT N'Đang tạo database'
-    CREATE DATABASE QLSINHVIEN
-END
-GO
-USE QLSINHVIEN
-SET DATEFORMAT DMY
+go
+if DB_ID('QLSINHVIEN') is null
+begin
+    print N'Đang tạo database'
+    create database QLSINHVIEN
+end
+go
+use QLSINHVIEN
+set DATEFORMAT DMY
 
 -- KHOA(MaKhoa, TenKhoa)
-GO
-CREATE TABLE KHOA
+go
+create table KHOA
 (
-    MaKhoa VARCHAR(10) PRIMARY KEY,
-    TenKhoa NVARCHAR(30)
+    MaKhoa varchar(10) primary key,
+    TenKhoa nvarchar(30)
 )
 
 -- NGANH(MaNganh, TenNganh, MaKhoa)
-GO
-CREATE TABLE NGANH
+go
+create table NGANH
 (
-    MaNganh INT PRIMARY KEY,
-    TenNganh NVARCHAR(30),
-    MaKhoa VARCHAR(10),
-    FOREIGN KEY (MaKhoa) REFERENCES KHOA(MaKhoa)
+    MaNganh int primary key,
+    TenNganh nvarchar(30),
+    MaKhoa varchar(10),
+    foreign key (MaKhoa) references KHOA(MaKhoa)
 )
 
 -- LOP(MaLop, TenLop, MaNganh, KhoaHoc, HeDT, NamNhapHoc)
-GO
-CREATE TABLE LOP
+go
+create table LOP
 (
-    MaLop VARCHAR(10) PRIMARY KEY,
-    TenLop NVARCHAR(30),
-    MaNganh INT,
-    KhoaHoc INT,
-    HeDT VARCHAR(10),
-    NamNhapHoc INT,
-    FOREIGN KEY (MaNganh) REFERENCES NGANH(MaNganh)
+    MaLop varchar(10) primary key,
+    TenLop nvarchar(30),
+    MaNganh int,
+    KhoaHoc int,
+    HeDT varchar(10),
+    NamNhapHoc int,
+    foreign key (MaNganh) references NGANH(MaNganh)
 )
 
 -- SINHVIEN(MaSV, HoTen, MaLop, GioiTinh, NgaySinh, DiaChi)
-GO
-CREATE TABLE SINHVIEN
+go
+create table SINHVIEN
 (
-    MaSV INT PRIMARY KEY,
-    HoTen NVARCHAR(30),
-    MaLop VARCHAR(10),
-    GioiTinh NVARCHAR(5),
-    NgaySinh DATE,
-    DiaChi NVARCHAR(30),
-    FOREIGN KEY (MaLop) REFERENCES LOP(MaLop)
+    MaSV int primary key,
+    HoTen nvarchar(30),
+    MaLop varchar(10),
+    GioiTinh nvarchar(5),
+    NgaySinh date,
+    DiaChi nvarchar(30),
+    foreign key (MaLop) references LOP(MaLop)
 )
 
 -- HOCPHAN(MaHP, TenHP, SoDVHT, MaNganh, HocKy)
-GO
-CREATE TABLE HOCPHAN
+go
+create table HOCPHAN
 (
-    MaHP INT PRIMARY KEY,
-    TenHP NVARCHAR(30),
-    SoDVHT INT,
-    MaNganh INT,
-    HocKy INT,
-    FOREIGN KEY (MaNganh) REFERENCES NGANH(MaNganh)
+    MaHP int primary key,
+    TenHP nvarchar(30),
+    SoDVHT int,
+    MaNganh int,
+    HocKy int,
+    foreign key (MaNganh) references NGANH(MaNganh)
 )
 
 -- DIEMHP(MaSV, MaHP, DiemHP)
-GO
-CREATE TABLE DIEMHP
+go
+create table DIEMHP
 (
-    MaSV INT,
-    MaHP INT,
-    DiemHP FLOAT,
-    FOREIGN KEY (MaSV) REFERENCES SINHVIEN(MaSV),
-    FOREIGN KEY (MaHP) REFERENCES HOCPHAN(MaHP),
+    MaSV int,
+    MaHP int,
+    DiemHP float,
+    foreign key (MaSV) references SINHVIEN(MaSV),
+    foreign key (MaHP) references HOCPHAN(MaHP),
 )
 
-GO
-INSERT INTO KHOA
-VALUES
+go
+insert into KHOA
+values
     ('CNTT', N'Công Nghệ Thông Tin'),
     ('KT', N'Kế toán'),
     ('SP', N'Sư Phạm');
 
-SELECT *
-FROM KHOA
+select *
+from KHOA
 
-GO
-INSERT INTO NGANH
-VALUES
+go
+insert into NGANH
+values
     ('140902', N'Sư phạm Toán Tin', 'SP'),
     ('480202', N'Tin học ứng dụng', 'CNTT');
 
-SELECT *
-FROM NGANH
+select *
+from NGANH
 
-GO
-INSERT INTO LOP
-VALUES
+go
+insert into LOP
+values
     ('CT11', N'Cao đẳng tin học', '480202', '11', 'TC', '2013'),
     ('CT12', N'Cao đẳng tin học', '480202', '12', 'CÐ', '2013'),
     ('CT13', N'Cao đẳng tin học', '480202', '13', 'CÐ', '2014');
 
-SELECT *
-FROM LOP
+select *
+from LOP
 
-GO
-INSERT INTO SINHVIEN
-VALUES
+go
+insert into SINHVIEN
+values
     ('1', N'Phan Thanh', 'CT12', N'Nam', '12/9/1990', N'Tuy Phước'),
     ('2', N'Nguyễn Thị Cẩm Tú', 'CT12', N'Nữ', '12/1/1994', N'Quy Nhơn'),
     ('3', N'Võ Thị Hà', 'CT12', N'Nữ', '12/9/1990', N'An Nhơn'),
@@ -119,12 +119,12 @@ VALUES
     ('8', N'Nguyễn Văn Huy', 'CT11', N'Nam', '4/6/1995', N'Phú Mỹ'),
     ('9', N'Trần Thị Hoa', 'CT11', N'Nữ', '9/8/1994', N'Hoài Nhơn');
 
-SELECT *
-FROM SINHVIEN
+select *
+from SINHVIEN
 
-GO
-INSERT INTO HOCPHAN
-VALUES
+go
+insert into HOCPHAN
+values
     ('1', N'Toán cao cấp A1', '4', '480202', '1'),
     ('2', N'Tiếng Anh 1', '3', '480202', '1'),
     ('3', N'Vật lý đại cương', '4', '480202', '1'),
@@ -132,12 +132,12 @@ VALUES
     ('5', N'Tiếng anh 1', '3', '140902', '2'),
     ('6', N'Xác suất thống kê', '3', '140902', '2');
 
-SELECT *
-FROM HOCPHAN
+select *
+from HOCPHAN
 
-GO
-INSERT INTO DIEMHP
-VALUES
+go
+insert into DIEMHP
+values
     ('2', '2', '5.9'),
     ('2', '3', '4.5'),
     ('3', '1', '4.3'),
@@ -154,8 +154,8 @@ VALUES
     ('6', '3', '4'),
     ('7', '1', '6.2');
 
-SELECT *
-FROM DIEMHP
+select *
+from DIEMHP
 
 -- DROP TABLE DIEMHP
 -- DROP TABLE HOCPHAN
