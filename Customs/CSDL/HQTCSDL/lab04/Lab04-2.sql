@@ -1,3 +1,3 @@
--- QUẢN LÝ ĐỀ ÁN [Giải quyết các câu hỏi]
+use QuanLyBanHang
+set DATEFORMAT DMY
 
-create database Lab03;
