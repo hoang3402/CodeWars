@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Devart (www.devart.com), SQL document design file -->
+<!-- Modifying this generated file will probably render it invalid -->
+<Document>
+  <Properties>
+    <Type>SQL Document Design</Type>
+    <DatabaseProvider>aa8afe9c-7d62-4564-b477-c12e62e0f440</DatabaseProvider>
+    <ProviderVersion>5.8.107.0</ProviderVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+  </Properties>
+  <Connection Name="local">
+    <Category>00000000-0000-0000-0000-000000000000</Category>
+    <ConnectionString>Data Source=(local);Encrypt=False;Integrated Security=False;User ID=sa</ConnectionString>
+    <Database>QuanLyBanHang</Database>
+  </Connection>
+  <Views ShowAdditionalViews="False" IsLayoutActiveAttribute="False" MainViewAttribute="Design" MainViewScale="75">
+    <View Name="Design" Active="True" Visible="True">
+      <Data>
+        <StatementType>Select</StatementType>
+        <ActiveQuery>0</ActiveQuery>
+        <SubQuery Id="0" Open="0" LocationX="-310.688581822701" LocationY="98.908350018463" Scale="0.6875051">
+          <PageOptions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <HorizontalOverlap>0</HorizontalOverlap>
+            <VerticalOverlap>0</VerticalOverlap>
+            <TopLeftMargins>
+              <Width>10 mm</Width>
+              <Height>10 mm</Height>
+            </TopLeftMargins>
+            <BottomRightMargins>
+              <Width>10 mm</Width>
+              <Height>10 mm</Height>
+            </BottomRightMargins>
+            <PaperSize>
+              <Width>210 mm</Width>
+              <Height>297 mm</Height>
+            </PaperSize>
+          </PageOptions>
+          <Tables>
+            <Table Name="CTDATHANG" Left="896" Top="184" Width="203.0838" Height="98" Collapsed="False" />
+            <Table Name="CTPHIEUNHAP" Left="168" Top="336" Width="203.0838" Height="116" Collapsed="False" />
+            <Table Name="CTPHIEUXUAT" Left="912" Top="400" Width="203.0838" Height="116" Collapsed="False" />
+            <Table Name="DONDATHANG" Left="560" Top="352" Width="203.0838" Height="98" Collapsed="False" />
+            <Table Name="NHACUNGCAP" Left="560" Top="112" Width="203.0838" Height="116" Collapsed="False" />
+            <Table Name="PHIEUXUAT" Left="896" Top="560" Width="203.0838" Height="98" Collapsed="False" />
+            <Table Name="TONKHO" Left="160" Top="536" Width="203.0838" Height="152" Collapsed="False" />
+            <Table Name="VATTU" Left="560" Top="496" Width="203.0838" Height="116" Collapsed="False" />
+            <Table Name="PHIEUNHAP" Left="168" Top="160" Width="203.0838" Height="98" Collapsed="False" />
+          </Tables>
+        </SubQuery>
+      </Data>
+    </View>
+    <View Name="Code" Visible="True">
+      <Data />
+    </View>
+    <View Name="Data" Visible="False" />
+    <View Name="Profiler" Visible="False" />
+    <View Name="PivotGrid" Visible="False" />
+  </Views>
+  <ProfilingMode Enabled="False" />
+  <LiveProfilingMode Enabled="False" />
+</Document>

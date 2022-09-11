@@ -14,11 +14,11 @@ go
 go
 create table KTS
 (
-    MaKTS varchar(10) primary key,
-    HoTen nvarchar(50),
-    NamSinh int,
-    Phai nvarchar(10),
-    NoiTN nvarchar(50),
+    MaKTS     varchar(10)  primary key,
+    HoTen     nvarchar(50),
+    NamSinh   int,
+    Phai      nvarchar(10),
+    NoiTN     nvarchar(50),
     DiaChiKTS nvarchar(50)
 )
 go
@@ -26,9 +26,9 @@ go
 go
 create table CHUTHAU
 (
-    MaChuThau varchar(10) primary key,
-    HoTen nvarchar(50),
-    SDT varchar(10),
+    MaChuThau  varchar(10)  primary key,
+    HoTen      nvarchar(50),
+    SDT        varchar(10),
     DiaChiThau nvarchar(50)
 )
 go
@@ -36,9 +36,9 @@ go
 go
 create table CHUNHAN
 (
-    MaChu varchar(10) primary key,
-    TenChu nvarchar(50),
-    SDT varchar(10),
+    MaChu     varchar(10)  primary key,
+    TenChu    nvarchar(50),
+    SDT       varchar(10),
     DiaChiChu nvarchar(50)
 )
 go
@@ -46,10 +46,10 @@ go
 go
 create table CONGNHAN
 (
-    MaCN varchar(10) primary key,
-    HoTen nvarchar(50),
-    NamSinh int,
-    NamVao int,
+    MaCN      varchar(10)  primary key,
+    HoTen     nvarchar(50),
+    NamSinh   int,
+    NamVao    int,
     ChuyenMon nvarchar(50)
 )
 go
@@ -57,14 +57,14 @@ go
 go
 create table CONGTRINH
 (
-    SoCT int primary key,
-    TenCT nvarchar(50),
-    DiaChiCT nvarchar(50),
+    SoCT      int          primary key,
+    TenCT     nvarchar(50),
+    DiaChiCT  nvarchar(50),
     TinhThanh nvarchar(50),
-    KinhPhi int,
+    KinhPhi   int,
     MaChuThau varchar(10),
-    MaChu varchar(10),
-    NgayBD date,
+    MaChu     varchar(10),
+    NgayBD    date,
     foreign key (MaChuThau) references CHUTHAU(MaChuThau),
     foreign key (MaChu) references CHUNHAN(MaChu),
 )
@@ -73,9 +73,9 @@ go
 go
 create table THAMGIA
 (
-    MaCN varchar(10),
-    SoCT int,
-    NgayTG date,
+    MaCN     varchar(10),
+    SoCT     int,
+    NgayTG   date,
     SoNgayTG int,
 )
 go
@@ -83,8 +83,8 @@ go
 go
 create table THIETKE
 (
-    MaKTS varchar(10),
-    SoCT int,
+    MaKTS  varchar(10),
+    SoCT   int,
     ThuLao int,
     foreign key (MaKTS) references KTS(MaKTS)
 )
@@ -201,3 +201,6 @@ from THIETKE;
 -- DROP TABLE CONGNHAN;
 -- DROP TABLE CONGTRINH;
 -- DROP TABLE THAMGIA;
+
+-- use master
+-- drop database QLCONGTRINH
