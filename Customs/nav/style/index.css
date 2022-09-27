@@ -1,0 +1,66 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body header {
+  display: flex;
+}
+body header .logo {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 1% 0% 1% 1%;
+}
+body header .menu {
+  margin-left: 4%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+body header .menu div {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+}
+body nav {
+  background: #0072E1;
+}
+body nav ul {
+  display: flex;
+  gap: 1%;
+  padding-left: 1%;
+}
+body nav ul li {
+  list-style-type: none;
+  margin: 1% 2% 1% 2%;
+}
+body nav ul li a {
+  text-decoration: none;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+body nav ul li svg {
+  width: 35px;
+  height: 27px;
+  left: 3.23%;
+  right: 93.12%;
+  top: 10.16%;
+  bottom: 87.21%;
+}
+body nav ul li:hover {
+  background-color: #FFFFFF;
+}
+body nav ul li:hover a {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #0072E1;
+}/*# sourceMappingURL=index.css.map */
