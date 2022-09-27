@@ -76,7 +76,7 @@
     "variant": "cpp"
   },
   "compile-hero.disable-compile-files-on-did-save-code": true,
-  "livePreview.defaultPreviewPath": "/Customs/I Design, You Build! - Frontend Challenge #1/index.html",
+  "livePreview.defaultPreviewPath": "/workspaces/CodeWars/ThietKeWeb/BTLab1/index.html",
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "aiXcoder.showTrayIcon": true
 }

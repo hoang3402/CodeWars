@@ -4,6 +4,8 @@
 }
 
 body {
+    margin: 1% 1%;
+
     header {
         display: flex;
 
@@ -19,6 +21,7 @@ body {
             gap: 15px;
 
             div {
+                cursor: pointer;
                 font-family: 'Arial';
                 font-style: normal;
                 font-weight: 700;
@@ -26,6 +29,43 @@ body {
                 line-height: 18px;
 
                 color: #000000;
+            }
+
+            .danh-muc .sub-danh-muc,
+            .gioi-thieu .sub-gioi-thieu {
+                display: none;
+            }
+
+            .danh-muc:hover .sub-danh-muc,
+            .gioi-thieu:hover .sub-gioi-thieu {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                background: #0072E1;
+                border-radius: 5px;
+
+                ul {
+                    li {
+                        list-style-type: none;
+                        text-align: center;
+                        gap: 2px;
+
+                        a {
+                            text-decoration: none;
+                            word-wrap: break-word;
+
+                            font-family: 'Arial';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 18px;
+
+                            color: #FFFFFF;
+                        }
+                    }
+                }
             }
         }
     }
@@ -37,10 +77,12 @@ body {
             display: flex;
             gap: 1%;
             padding-left: 1%;
+            align-items: center;
 
             li {
                 list-style-type: none;
-                margin: 1% 2% 1% 2%;
+                padding: 1% 2% 1% 2%;
+                cursor: pointer;
 
                 a {
                     text-decoration: none;
@@ -69,12 +111,12 @@ body {
 
                 a {
                     font-family: 'Arial';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 16px;
-                line-height: 18px;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 18px;
 
-                color: #0072E1;
+                    color: #0072E1;
                 }
             }
         }

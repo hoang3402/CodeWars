@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="widtd=device-widtd, initial-scale=1.0" />
+	<link rel="stylesheet" href="style/index.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+	<title>Bài tập Lab 1</title>
+</head>
+
+<body>
+	<h1>Bài tập Lab 1</h1>
+	<div class="avatar">
+		<img src="https://picsum.photos/200" alt="">
+	</div>
+	<div class="info">
+		<p>Họ tên: Nguyễn Văn Hoàng</p>
+		<p>Mã số sinh viên: 12101005</p>
+	</div>
+	<div class="Cau-1">
+		<div class="De-bai">
+			Câu 1: Trình bày sự khác nhau giữa Inline, Inline-block và block của
+			display. Ví dụ minh họa
+		</div>
+		<div class="tra-loi">
+			<div class="Trinh-bay-nd">
+				Trình bày nội dung ở đây: <br />
+				<span>
+					<br> <strong>display: inline</strong>
+					<br> Với kiểu này thì các item sẽ nằm trên cùng một dòng, ví dụ như
+					span. Nếu các items vượt quá độ dài của dòng thì item sẽ xuống dòng
+					mới.
+					<br> Các item có kiểu display này không thể set width và height.
+					<br> Các inline item sẽ chỉ có thể điều chỉnh margin và padding left and right (top và bottom thì
+					không
+					thể).
+
+					<br>
+					<br>
+					<strong>display: block</strong>
+					<br> Khác với kiểu display: inline thì các item có kiểu display: block luôn được xuống dòng và chiếm
+					toàn
+					bộ width nếu width không được set. Ví dụ sẽ là div
+					<br> Các item có kiểu display: block sẽ set được width, height, margin, padding đầy đủ 4 hướng (top,
+					bottom, right, left).
+
+					<br>
+					<br>
+					<strong>display: inline-block</strong>
+					<br> Kiểu display: inline-block sẽ được sắp xếp giống với kiểu display: inline, nghĩa là các items
+					sẽ
+					được xếp cùng nhau trên một dòng. Tuy nhiên các items sẽ có thuộc tính của display: block như là có
+					set width, height, margin, padding đủ 4 hướng.
+					<br>
+					Kiểu display này sẽ thường được sử dụng để tạo thanh navbar.
+				</span>
+			</div>
+			<br />
+			<div class="vd-minh-hoa">
+				Ví dụ minh họa
+				<div class="cau-tra-loi">
+					<pre><code class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+span.a {
+	display: inline; 
+	width: 100px;
+	height: 100px;
+	padding: 5px;
+	border: 1px solid blue;  
+	background-color: yellow; 
+}
+
+span.b {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	padding: 5px;
+	border: 1px solid blue;    
+	background-color: yellow; 
+}
+
+span.c {
+	display: block;
+	width: 100px;
+	height: 100px;
+	padding: 5px;
+	border: 1px solid blue;    
+	background-color: yellow; 
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;VÍ DỤ MINH HỌA&lt;/h1&gt;
+
+&lt;h2&gt;display: inline&lt;/h2&gt;
+&lt;div&gt; 
+	đây là ví dụ&lt;span class="a"&gt;display:&lt;/span&gt; &lt;span class="a"&gt;inline&lt;/span&gt; 
+&lt;/div&gt;
+
+&lt;h2&gt;display: inline-block&lt;/h2&gt;
+&lt;div&gt;
+	đây là ví dụ&lt;span class="b"&gt;display:&lt;/span&gt; &lt;span class="b"&gt;inline-block&lt;/span&gt; 
+&lt;/div&gt;
+
+&lt;h2&gt;display: block&lt;/h2&gt;
+&lt;div&gt; 
+	đây là ví dụ&lt;span class="c"&gt;display:&lt;/span&gt; &lt;span class="c"&gt;block&lt;/span&gt; 
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+						</code>
+					</pre>
+					<img src="assets/bai1.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="Cau-2">
+		<div class="De-bai">
+			Câu 2: Trình bày sự khác nhau giữa các thuộc tính position(relative,
+			absolute, fixed, sticky). Ví dụ minh họa
+		</div>
+		<div class="tra-loi">
+			<div class="Trinh-bay-nd">
+				Trình bày nội dung ở đây: <br>
+				<span>
+					<br>
+					<strong>Thuộc tính Position Relative</strong> <br>
+					Thuộc tính position: relative trong CSS giúp Định vị trí tuyệt đối cho các thành phần. Ví dụ:
+					selector{position: relative;} <br>
+					<br>
+					<strong>Thuộc tính Position Absolute</strong> <br>
+					Như đã nói ở trên thuộc tính position: absolute trong CSS có tác dụng giúp định vị trí tuyệt đối cho
+					thành phần theo thành phần bao ngoài, hoặc ít nhất là theo cửa sổ trình duyệt. Cụ thể hơn, thuộc
+					tính absolute xác định định tọa độ của thành phần theo một thẻ cha relative (nếu có), Nếu không có
+					thẻ cha thì nó sẽ đi theo body của toàn trang web. Cách sử dụng cũng tương tự như relative. <br>
+					<br>
+					<strong>Thuộc tính Position Fixed </strong> <br>
+					Thuộc tính thường được các lập trình viên dùng để định vị một thành phần so với window hiển thị của
+					các trình duyệt. Bạn có thể thấy ví dụ này, khi vào một website nào đó và bạn thử scroll browser,
+					bạn sẽ thấy menu hay button cứ đứng yên một chỗ không thay đổi thì đó chính là position fixed. Giá
+					trị này hoàn toàn không phụ thuộc vào phần tử cha, khi nào scroll trình duyệt là nó hoạt động thôi.
+					<br>
+					<br>
+					<strong>Thuộc tính Position Sticky</strong> <br>
+					Đây là một thuộc tính khá tương đồng với fixed, bạn có thể xem nó như một sự kết hợp “lưỡng long
+					nhất thể” của relative và fixed. Vì có sự lai tạo này nên nó cũng không được hỗ trợ quá nhiều trong
+					cộng đồng làm web. Nó cũng không sử dụng được trên trình duyệt Internet Explorer cũng như một số
+					phiên bản đầu của Edge nên sẽ dễ gây lỗi. Không khuyến khích các lập trình viên sử dụng
+				</span>
+			</div>
+			<br />
+			<div class="vd-minh-hoa-cau-2">
+				<p>Ví dụ minh họa relative:</p>
+				<pre class="code_relative code">
+                    <code>
+&lt;h3&gt;{position: relative;}&lt;/h3&gt;
+&lt;div style=”position: relative; width:250px;”&gt;                       
+position: relative; width:250px;                       
+&lt;/div&gt;                        
+&lt;br&gt;                      
+&lt;h3&gt;{position: relative; left:50px; top:50px;}&lt;/h3&gt;                       
+&lt;div style=”position: relative; left:50px; top:50px; width:250px;”&gt;                       
+position: relative; width:250px; &lt;br/&gt;                       
+left:50px; top:50px;                       
+&lt;/div&gt;
+                    </code>
+                  </pre>
+				<img src="assets/relative.png" alt="">
+				<div class="absolute">
+					<p>Ví dụ minh họa absolute:</p>
+					<pre class="code_absolute code">
+							<code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;                     
+&lt;head&gt;                     
+&lt;meta charset=”utf-8″/&gt;                     
+&lt;title&gt;CSS Position&lt;/title&gt;                      
+&lt;/head&gt;                     
+&lt;body&gt;                     
+&lt;h2 class=”mb-3″&gt;CSS {position:absolute}&lt;/h2&gt;                     
+&lt;div style=”position:relative; height:200px;border:1px solid red;”&gt;                     
+Tui là dòng div {position:relative} (Đỏ).                     
+&lt;div style=”border:1px solid green;”&gt;                     
+Tui là dòng div thông thường (Xanh lá).                     
+&lt;div style=”position: absolute; bottom:10px; right:15px; background:yellow;”&gt;                      
+position: absolute; bottom:10px; right:15px;                     
+&lt;/div&gt;                     
+&lt;/div&gt;                      
+&lt;/div&gt;                     
+&lt;/body&gt;                     
+&lt;/html&gt;
+							</code>
+						  </pre>
+					<img src="assets/absolute.png" alt="">
+					<p>Ví dụ minh họa fixed:</p>
+					<pre class="code_fixed code">
+						<code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;                  
+&lt;head&gt;                  
+&lt;meta charset=”utf-8″/&gt;                  
+&lt;title&gt;CSS Position&lt;/title&gt;                 
+&lt;style&gt;
+div {                 
+background-color:yellow;                 
+padding: 5px;                 
+}
+&lt;/style&gt;                  
+&lt;/head&gt;                  
+&lt;body&gt;                 
+&lt;h2&gt;{position: fixed}&lt;/h2&gt;               
+&lt;div style=”position:fixed; bottom:20px; right:15px;”&gt;               
+position:fixed; bottom:20px; right:15px;                 
+&lt;/div&gt;                  
+&lt;p&gt;Content .. 1&lt;/p&gt;                  
+&lt;p&gt;Content .. 2&lt;/p&gt;                  
+&lt;p&gt;Content .. 3&lt;/p&gt;                  
+&lt;p&gt;Content .. 4&lt;/p&gt;                 
+&lt;p&gt;Content .. 5&lt;/p&gt;                
+&lt;/body&gt;                 
+&lt;/html&gt;
+						</code>
+					  </pre>
+					<img src="assets/fixed.png" alt="">
+					<p>Ví dụ minh họa sticky:</p>
+					<pre class="code_sticky code">
+						<code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;                 
+&lt;head&gt;                 
+&lt;style&gt;                  
+div.sticky {                  
+position: -webkit-sticky;                 
+position: sticky;                 
+top: 0;                 
+padding: 5px;                 
+background-color: #cae8ca;                 
+border: 2px solid #4CAF50;                 
+}                 
+&lt;/style&gt;                  
+&lt;/head&gt; 
+&lt;body&gt;
+&lt;p&gt;Thử &lt;b&gt;cuộn lên xuống&lt;/b&gt; để nhìn thấy cái sticky positioning này hoạt động nhé!&lt;/p&gt;                 
+&lt;p&gt; Internet Explorer và Edge phiên bản 15 trở xuống không hỗ trợ bạn sử dụng Position sticky!&lt;/p&gt;                
+&lt;div class=”sticky”&gt;Tui là cái sticky!&lt;/div&gt;                 
+&lt;div style=”padding-bottom:2000px”&gt;                 
+&lt;p&gt;Trong ví dụ này, phần tử dính sẽ dính vào đầu trang (top: 0), khi bạn đến vị trí cuộn của nó.&lt;/p&gt;                              
+&lt;/div&gt;                 
+&lt;/body&gt;                  
+&lt;/html&gt;
+						</code>
+					</pre>
+					<img src="assets/sticky.png" alt="">
+				</div>
+			</div>
+		</div>
+</body>
+
+</html>

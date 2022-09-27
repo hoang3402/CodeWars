@@ -3,6 +3,9 @@
   margin: 0px;
 }
 
+body {
+  margin: 1% 1%;
+}
 body header {
   display: flex;
 }
@@ -17,12 +20,44 @@ body header .menu {
   gap: 15px;
 }
 body header .menu div {
+  cursor: pointer;
   font-family: "Arial";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
   color: #000000;
+}
+body header .menu .danh-muc .sub-danh-muc,
+body header .menu .gioi-thieu .sub-gioi-thieu {
+  display: none;
+}
+body header .menu .danh-muc:hover .sub-danh-muc,
+body header .menu .gioi-thieu:hover .sub-gioi-thieu {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #0072E1;
+  border-radius: 5px;
+}
+body header .menu .danh-muc:hover .sub-danh-muc ul li,
+body header .menu .gioi-thieu:hover .sub-gioi-thieu ul li {
+  list-style-type: none;
+  text-align: center;
+  gap: 2px;
+}
+body header .menu .danh-muc:hover .sub-danh-muc ul li a,
+body header .menu .gioi-thieu:hover .sub-gioi-thieu ul li a {
+  text-decoration: none;
+  word-wrap: break-word;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #FFFFFF;
 }
 body nav {
   background: #0072E1;
@@ -31,10 +66,12 @@ body nav ul {
   display: flex;
   gap: 1%;
   padding-left: 1%;
+  align-items: center;
 }
 body nav ul li {
   list-style-type: none;
-  margin: 1% 2% 1% 2%;
+  padding: 1% 2% 1% 2%;
+  cursor: pointer;
 }
 body nav ul li a {
   text-decoration: none;
