@@ -1,0 +1,28 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    padding: 1% 1% 1% 1%;
+
+    .bg,
+    .bg img {
+        width: 100%;
+    }
+
+    #welcome,
+    #content {
+        text-align: center;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1%;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
