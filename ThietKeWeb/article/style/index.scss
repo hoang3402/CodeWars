@@ -13,7 +13,7 @@
 body {
     .base {
         width: 1140px;
-        height: 638px;
+        // height: 638px;
 
         position: absolute;
         top: 50%;
@@ -48,8 +48,12 @@ body {
             margin-top: 90px;
 
             .article {
-                width: 360px;
-                height: 154.29px;
+                background-color: white;
+
+                img {
+                    width: 360px;
+                    height: 154.29px;
+                }
 
                 .description {
                     margin-left: 10%;
