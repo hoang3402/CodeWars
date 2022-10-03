@@ -31,6 +31,9 @@ body .base .title h1 {
   text-align: center;
   color: #000000;
 }
+body .base .title p {
+  text-align: center;
+}
 body .base .articles {
   display: flex;
   gap: 30px;
