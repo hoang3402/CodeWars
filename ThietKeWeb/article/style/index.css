@@ -16,6 +16,8 @@ body .base {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background: #F2F3F5;
+  box-shadow: 0px 0px 21px 1px rgba(0, 0, 0, 0.25);
 }
 body .base .title {
   margin: 0 10% 2% 10%;
@@ -31,7 +33,7 @@ body .base .title h1 {
 }
 body .base .articles {
   display: flex;
-  gap: 2%;
+  gap: 30px;
   margin-top: 90px;
 }
 body .base .articles .article {
