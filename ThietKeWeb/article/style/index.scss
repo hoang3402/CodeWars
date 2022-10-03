@@ -50,6 +50,10 @@ body {
             .article {
                 background-color: white;
 
+                .title {
+                    margin: 0% 0% 0% 10%;
+                }
+
                 img {
                     width: 360px;
                     height: 154.29px;
@@ -58,6 +62,7 @@ body {
                 .description {
                     margin-left: 10%;
                     margin-right: 10%;
+                    margin-bottom: 20%;
 
                     font-family: 'Inter';
                     font-style: normal;

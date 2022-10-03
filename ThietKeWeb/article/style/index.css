@@ -41,6 +41,9 @@ body .base .articles {
 body .base .articles .article {
   background-color: white;
 }
+body .base .articles .article .title {
+  margin: 0% 0% 0% 10%;
+}
 body .base .articles .article img {
   width: 360px;
   height: 154.29px;
@@ -48,6 +51,7 @@ body .base .articles .article img {
 body .base .articles .article .description {
   margin-left: 10%;
   margin-right: 10%;
+  margin-bottom: 20%;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
