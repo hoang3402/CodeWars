@@ -209,11 +209,9 @@ body footer .up {
   justify-content: space-between;
   gap: 151px;
 }
-body footer .up .left {
-  margin: 20px 0px 24px 20px;
-}
+body footer .up .left,
 body footer .up .right {
-  margin: 20px 20px 24px 20px;
+  margin: 20px 0px 24px 20px;
 }
 body footer .bottom {
   text-align: center;

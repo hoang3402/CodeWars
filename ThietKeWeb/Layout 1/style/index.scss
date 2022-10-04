@@ -282,12 +282,9 @@ body {
             justify-content: space-between;
             gap: 151px;
 
-            .left {
-                margin: 20px 0px 24px 20px;
-            }
-
+            .left,
             .right {
-                margin: 20px 20px 24px 20px;
+                margin: 20px 0px 24px 20px;
             }
         }
 
