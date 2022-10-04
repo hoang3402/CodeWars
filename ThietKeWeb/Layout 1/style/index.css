@@ -151,7 +151,7 @@ body .contents .goc-nhin {
 body .contents .goc-nhin p {
   font-family: "Inter";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #000000;
@@ -202,6 +202,7 @@ body .contents .right .banner-2 img {
 }
 body footer {
   background: #024165;
+  font-family: "Inter";
   color: #FFFFFF;
 }
 body footer .up {
