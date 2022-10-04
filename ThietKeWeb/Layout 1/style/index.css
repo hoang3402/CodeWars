@@ -15,21 +15,199 @@ body .info-book-ads {
   text-align: center;
   padding: 13px 0% 10px 0%;
 }
-body header .logo {
+body header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1%;
+}
+body header .left .logo {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
   color: #023856;
-  float: left;
 }
-body header .search {
-  float: right;
+body header .right {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5%;
+}
+body header .right .search input {
+  border: 1px solid #2DB0FA;
+  border-radius: 20px;
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  background-color: white;
+  background-image: url("https://api.iconify.design/tabler:search.svg");
+  background-repeat: no-repeat;
+  background-position: 95%;
+  color: #000000;
+  padding: 2%;
+}
+body header .right img {
+  width: 19.5px;
+  height: 21.5px;
+  cursor: pointer;
+}
+body header .right .login button {
+  background: #024165;
+  border-radius: 30px;
+  padding: 2%;
+  width: 110px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  cursor: pointer;
 }
 body nav {
-  float: none;
+  display: flex;
+  margin: 1%;
+  margin-bottom: 0%;
+  gap: 0.5rem;
+}
+body nav div {
+  padding: 3px 14px 3px 14px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+body nav div:hover {
+  background: #024165;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+body .contents {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 1%;
+}
+body .contents .left {
+  margin: 1%;
+}
+body .contents .left .newest {
+  display: flex;
+}
+body .contents .left .newest .title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+body .contents .left .newest .short-describe {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+}
+body .contents .left .newest .short-describe #Yersin {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  color: #AEA3A3;
+}
+body .contents .left .newest img {
+  margin-right: 2%;
+}
+body .contents .left .newest .time {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #AEA3A3;
+}
+body .contents .goc-nhin {
+  display: inline-block;
+  width: 100%;
+  margin-top: 19px;
+}
+body .contents .goc-nhin p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+body .contents .goc-nhin .line {
+  background: #D9D9D9;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  height: 1px;
+  width: 90%;
+  padding-left: 5%;
+  margin-top: 5px;
+}
+body .contents .goc-nhin img {
+  display: block;
+  margin: auto;
+}
+body .contents .goc-nhin .previews {
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  gap: 23px;
+}
+body .contents .goc-nhin .previews div {
+  width: 180px;
+}
+body .contents .right .banner-1 {
+  background: #D9D9D9;
+  width: 343px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  color: #000000;
+}
+body .contents .right .banner-2 img {
+  width: 343px;
+  height: 416px;
+  border: 1px solid #024165;
 }
 body footer {
-  display: none;
+  background: #024165;
+  color: #FFFFFF;
+}
+body footer .up {
+  display: flex;
+  justify-content: space-between;
+  gap: 151px;
+}
+body footer .up .left {
+  margin: 20px 0px 24px 20px;
+}
+body footer .up .right {
+  margin: 20px 20px 24px 20px;
+}
+body footer .bottom {
+  text-align: center;
+  padding-bottom: 14px;
 }/*# sourceMappingURL=index.css.map */
