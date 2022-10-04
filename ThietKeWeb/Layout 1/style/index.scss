@@ -46,6 +46,7 @@ body {
                 input {
                     border: 1px solid #2DB0FA;
                     border-radius: 20px;
+                    width: 193px;
 
                     font-family: 'Inter';
                     font-style: italic;
@@ -99,7 +100,13 @@ body {
         display: flex;
         margin: 1%;
         margin-bottom: 0%;
-        gap: 0.5rem;
+
+        .line {
+            width: 1px;
+            padding: 0;
+
+            background: #024165;
+        }
 
         div {
             padding: 3px 14px 3px 14px;
@@ -131,6 +138,12 @@ body {
             .newest {
                 display: flex;
 
+                img {
+                    margin-right: 2%;
+
+                    cursor: pointer;
+                }
+
                 .title {
                     font-family: 'Inter';
                     font-style: normal;
@@ -139,6 +152,7 @@ body {
                     line-height: 19px;
 
                     color: #000000;
+                    cursor: pointer;
                 }
 
                 .short-describe {
@@ -161,10 +175,6 @@ body {
                     color: #000000;
                 }
 
-                img {
-                    margin-right: 2%;
-                }
-
                 .time {
                     display: flex;
                     align-items: center;
@@ -185,6 +195,7 @@ body {
             display: inline-block;
             width: 100%;
             margin-top: 19px;
+
 
             p {
                 font-family: 'Inter';
@@ -217,6 +228,8 @@ body {
                 margin-top: 22px;
                 margin-bottom: 22px;
                 gap: 23px;
+
+                cursor: pointer;
 
                 div {
                     width: 180px;
