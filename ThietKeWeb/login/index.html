@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/index.css" />
+    <title>Login page</title>
+  </head>
+  <body>
+    <div class="warper">
+      <div class="title">
+        <p>Đăng ký</p>
+      </div>
+      <div id="error">
+        <p id="error-username">Username không được để trống.</p>
+        <p id="error-password">Password không được để trống.</p>
+        <p id="error-re-password-null">Re-password không được để trống</p>
+        <p id="error-re-password-not-match">
+          Re-password phải giống password bạn đã nhập
+        </p>
+      </div>
+      <form action="">
+        <table>
+          <tr>
+            <td>Username:</td>
+            <td>
+              <input type="text" id="username" placeholder="Nhập tên" />
+            </td>
+          </tr>
+          <tr>
+            <td>Email:</td>
+            <td>
+              <input type="text" id="email" placeholder="Nhập email" />
+            </td>
+          </tr>
+          <tr>
+            <td>Password:</td>
+            <td>
+              <input type="password" id="password" placeholder="***" />
+            </td>
+          </tr>
+          <tr>
+            <td>Re-password:</td>
+            <td>
+              <input type="password" id="re-password" placeholder="***" />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="buttons">
+              <button type="submit" onclick="check()">Đăng ký</button>
+              <button type="reset">Reset</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+      <div class="required">
+        <p>Dùng javascript để kiểm tra thông tin nhập vào.</p>
+        <p>Yêu cầu của bài tập như sau:</p>
+        <ul>
+          <li>Tên đăng nhập không được để trống</li>
+          <li>Mật khẩu không được để trống</li>
+          <li>Mật khẩu nhập lại phải giống mật khẩu đã nhập ở trên</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script src="js/index.js"></script>
+</html>

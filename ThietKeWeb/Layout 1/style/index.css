@@ -1,1 +1,35 @@
-/*# sourceMappingURL=index.css.map */
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body .info-book-ads {
+  background: #024165;
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  color: #FFFFFF;
+  text-align: center;
+  padding: 13px 0% 10px 0%;
+}
+body header .logo {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #023856;
+  float: left;
+}
+body header .search {
+  float: right;
+}
+body nav {
+  float: none;
+}
+body footer {
+  display: none;
+}/*# sourceMappingURL=index.css.map */

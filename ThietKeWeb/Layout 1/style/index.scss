@@ -1,0 +1,47 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    .info-book-ads {
+        background: #024165;
+        font-family: 'Inter';
+        font-style: italic;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+
+        color: #FFFFFF;
+        text-align: center;
+
+        padding: 13px 0% 10px 0%;
+    }
+
+    header {
+        .logo {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+
+            color: #023856;
+
+            float: left;
+        }
+
+        .search {
+            float: right;
+        }
+    }
+
+    nav {
+        float: none;
+    }
+
+    footer {
+        display: none;
+    }
+}
