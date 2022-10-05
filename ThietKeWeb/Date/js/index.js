@@ -6,3 +6,35 @@ function loop() {
 }
 
 setInterval(loop, 900);
+
+// previews
+
+var index = 0;
+
+var lib = [
+    'https://raw.githubusercontent.com/ichte/Planets-Android-Learning/master/earth.jpg',
+    'https://raw.githubusercontent.com/ichte/Planets-Android-Learning/master/jupiter.jpg',
+    'https://raw.githubusercontent.com/ichte/Planets-Android-Learning/master/neptune.jpg'
+]
+
+document.getElementById('temp').src = lib[index];
+
+function next() {
+    index = index + 1 > 2 ? 0 : index + 1;
+    document.getElementById('temp').src = lib[index];
+}
+
+function prev() {
+    index = index - 1 < 0 ? 2 : index - 1;
+    document.getElementById('temp').src = lib[index];
+}
+
+var timer = setInterval(next, 1000);
+
+document.getElementById('temp').addEventListener('mouseover', () => {
+    clearInterval(timer);
+})
+
+document.getElementById('temp').addEventListener('mouseleave', () => {
+    timer = setInterval(next, 1000);
+})

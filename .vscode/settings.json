@@ -78,5 +78,6 @@
   "compile-hero.disable-compile-files-on-did-save-code": true,
   "livePreview.defaultPreviewPath": "/workspaces/CodeWars/ThietKeWeb/BTLab1/index.html",
   "editor.suggest.snippetsPreventQuickSuggestions": false,
-  "aiXcoder.showTrayIcon": true
+  "aiXcoder.showTrayIcon": true,
+  "liveServer.settings.port": 5501
 }
