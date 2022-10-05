@@ -8,7 +8,6 @@ function loop() {
 setInterval(loop, 900);
 
 // previews
-
 var index = 0;
 
 var lib = [

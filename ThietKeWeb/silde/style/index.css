@@ -1,0 +1,13 @@
+.show {
+    overflow: hidden;
+}
+
+.items {
+    position: relative;
+    display: flex;
+    transition: all 0.7s ease;
+}
+
+.items img {
+    flex: 1 0 100%;
+}
