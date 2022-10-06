@@ -17,5 +17,5 @@ window.onload = () => {
         items.style = 'transform: translateX(-' + itemWidth * index + 'px)';
     }
 
-    setInterval(hmm, 5000);
+    setInterval(hmm, 3000);
 }
