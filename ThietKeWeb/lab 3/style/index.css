@@ -168,7 +168,7 @@ body section .bg {
   position: absolute;
   background: #9D0C0C;
   transform: translateY(-25%);
-  height: 60%;
+  min-height: 70%;
   width: 100%;
   z-index: -1;
 }
