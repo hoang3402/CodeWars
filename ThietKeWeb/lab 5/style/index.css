@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Redacted+Script:wght@400;700&display=swap");
+header {
+  background: linear-gradient(225.52deg, #271A00 0.45%, rgba(0, 0, 0, 0.982162) 100.47%);
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 186px;
+}
+header nav div[class*=nav] {
+  font-family: "Redacted Script";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: -0.376923px;
+  color: #FFFFFF;
+}
+header nav .right {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+header nav .right a {
+  color: inherit;
+  text-decoration: none;
+}
+header nav .right button {
+  background: #FFAC12;
+  border-radius: 0px 18px 0px 0px;
+  outline: none;
+  padding: 14px 40px;
+  font-family: "Redacted Script";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  letter-spacing: -0.427179px;
+  cursor: pointer;
+  color: #000000;
+}
+header nav .right button img {
+  margin-left: 9px;
+}
+header .line {
+  height: 1px;
+  background: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.1;
+}
+header .title__bar {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 21px 186px 22px 186px;
+}
+header .title__bar .type_house,
+header .title__bar .money {
+  font-family: "Redacted Script";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: -0.804102px;
+}
+header .title__bar .address,
+header .title__bar .area {
+  font-family: "Redacted Script";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: -0.376923px;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  min-width: 1440px;
+}/*# sourceMappingURL=index.css.map */
