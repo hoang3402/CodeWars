@@ -1,8 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Redacted+Script:wght@400;700&display=swap');
 
 @import 'header';
+@import 'footer';
 @import 'reset';
+@import 'color';
+@import 'main';
+@import 'form';
 
 body {
+    font-family: 'Redacted Script';
     min-width: 1440px;
+    background-color: $colorBackground;
+}
+
+section {
+    margin: 60px 192px 0px 185px;
+}
+
+.strong {
+    font-weight: 700;
 }

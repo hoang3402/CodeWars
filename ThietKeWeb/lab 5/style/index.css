@@ -76,11 +76,119 @@ header .title__bar .area {
   opacity: 0.6;
 }
 
+footer {
+  display: none;
+}
+
 * {
   padding: 0%;
   margin: 0%;
 }
 
+.main {
+  display: flex;
+  gap: 23px;
+}
+.main .left .img__preview .main__img img {
+  width: 704px;
+  height: 520px;
+}
+.main .left .img__preview .gallery {
+  display: flex;
+  gap: 24px;
+  margin-top: 20px;
+  margin-bottom: 41px;
+}
+.main .left .details .detail {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+}
+.main .left .details .detail .name {
+  grid-column-start: 1;
+  grid-column-end: 7;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  min-width: 336px;
+  background: #FFFFFF;
+  box-shadow: 0px 32px 34px rgba(0, 0, 0, 0.133714);
+  border-radius: 25px;
+}
+.form .agent {
+  display: flex;
+  gap: 10px;
+  min-width: 296px;
+  background: #F5F5F5;
+  border-radius: 10px;
+}
+.form .agent .avatar {
+  margin: 15px 0px 15px 17px;
+}
+.form .agent .right {
+  margin: 16px 0px 19px;
+}
+.form input {
+  border: 1px solid #EBEBEB;
+  border-radius: 10px;
+  padding: 20px 249px 25px 20px;
+}
+.form input::-moz-placeholder {
+  font-family: "Redacted Script";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: -0.376923px;
+  color: #000000;
+}
+.form input:-ms-input-placeholder {
+  font-family: "Redacted Script";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: -0.376923px;
+  color: #000000;
+}
+.form input::placeholder {
+  font-family: "Redacted Script";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: -0.376923px;
+  color: #000000;
+}
+.form input:nth-child(5) {
+  padding: 20px 109px 65px 20px;
+}
+.form button {
+  cursor: pointer;
+  background: #000000;
+  border-radius: 0px 18px 0px 0px;
+  padding: 25px 83px 23px 84px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  letter-spacing: -0.427179px;
+  color: #FFFFFF;
+}
+
 body {
+  font-family: "Redacted Script";
   min-width: 1440px;
+  background-color: #EFEFF0;
+}
+
+section {
+  margin: 60px 192px 0px 185px;
+}
+
+.strong {
+  font-weight: 700;
 }/*# sourceMappingURL=index.css.map */
