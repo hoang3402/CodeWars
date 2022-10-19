@@ -19,7 +19,7 @@ header nav div[class*=nav] {
 }
 header nav .right {
   display: flex;
-  gap: 60px;
+  gap: 73px;
   align-items: center;
 }
 header nav .right a {
@@ -57,6 +57,7 @@ header .title__bar {
 }
 header .title__bar .type_house,
 header .title__bar .money {
+  margin-bottom: 14px;
   font-family: "Redacted Script";
   font-style: normal;
   font-weight: 700;
@@ -87,6 +88,7 @@ footer {
 
 .main {
   display: flex;
+  justify-content: space-between;
   gap: 23px;
 }
 .main .left .img__preview .main__img img {
@@ -100,12 +102,40 @@ footer {
   margin-bottom: 41px;
 }
 .main .left .details .detail {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
+  box-shadow: 0px 32px 34px rgba(0, 0, 0, 0.133714);
+  border-radius: 25px;
 }
 .main .left .details .detail .name {
-  grid-column-start: 1;
-  grid-column-end: 7;
+  padding: 30px;
+}
+.main .left .details .detail .line {
+  height: 1px;
+  width: 100%;
+  background: #E4E4E4;
+}
+.main .left .details .detail .bottom {
+  display: flex;
+  align-items: center;
+}
+.main .left .details .detail .bottom .line {
+  background: #E4E4E4;
+  width: 1px;
+  height: 60px;
+}
+.main .left .details .detail .bottom .bedroom,
+.main .left .details .detail .bottom .bathroom,
+.main .left .details .detail .bottom .artboard,
+.main .left .details .detail .bottom .time,
+.main .left .details .detail .bottom .garage {
+  padding-left: 59px;
+  padding-right: 59px;
+}
+.main .left .description {
+  background: #FFFFFF;
+  box-shadow: 0px 32px 34px rgba(0, 0, 0, 0.133714);
+  border-radius: 25px;
+  margin-top: 30px;
+  padding: 30px;
 }
 
 .form {

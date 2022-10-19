@@ -20,8 +20,9 @@ header {
 
         .right {
             display: flex;
-            gap: 60px;
+            gap: 73px;
             align-items: center;
+
 
             a {
                 color: inherit;
@@ -66,6 +67,7 @@ header {
 
         .type_house,
         .money {
+            margin-bottom: 14px;
             font-family: 'Redacted Script';
             font-style: normal;
             font-weight: 700;

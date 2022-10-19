@@ -1,8 +1,10 @@
 .main {
     display: flex;
+    justify-content: space-between;
     gap: 23px;
 
     .left {
+
         .img__preview {
             .main__img {
                 img {
@@ -21,14 +23,47 @@
 
         .details {
             .detail {
-                display: grid;
-                grid-template-columns: auto auto auto auto auto auto;
+                box-shadow: 0px 32px 34px rgba(0, 0, 0, 0.133714);
+                border-radius: 25px;
 
                 .name {
-                    grid-column-start: 1;
-                    grid-column-end: 7;
+                    padding: 30px;
+                }
+
+                .line {
+                    height: 1px;
+                    width: 100%;
+                    background: #E4E4E4;
+                }
+
+                .bottom {
+                    display: flex;
+                    align-items: center;
+
+                    .line {
+                        background: #E4E4E4;
+                        width: 1px;
+                        height: 60px;
+                    }
+
+                    .bedroom,
+                    .bathroom,
+                    .artboard,
+                    .time,
+                    .garage {
+                        padding-left: 59px;
+                        padding-right: 59px;
+                    }
                 }
             }
+        }
+
+        .description {
+            background: #FFFFFF;
+            box-shadow: 0px 32px 34px rgba(0, 0, 0, 0.133714);
+            border-radius: 25px;
+            margin-top: 30px;
+            padding: 30px;
         }
     }
 }

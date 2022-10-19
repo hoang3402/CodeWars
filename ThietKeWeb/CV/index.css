@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+}
+
+.left {
+    background: #174180;
+    width: (185/(185+410))%;
+}

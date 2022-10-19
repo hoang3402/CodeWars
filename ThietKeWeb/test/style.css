@@ -1,0 +1,256 @@
+/* định dạng css bài làm */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#warp {
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
+}
+
+#warp > div.info_for_ads {
+  background-color: #005aca;
+  color: white;
+  font-style: italic;
+  text-align: center;
+  padding: 5px 0px 5px;
+  margin-bottom: 8px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 10px;
+}
+
+#warp > header .search_bar {
+  display: flex;
+  width: 400px;
+  border: 1px solid #005aca;
+  border-radius: 20px;
+  padding: 7px;
+  gap: 10px;
+}
+
+#warp > header .search_bar input:focus,
+#warp > header .search_bar input {
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+#warp > header .search_bar input::placeholder {
+  font-style: italic;
+}
+
+#warp > header > div.right > div.login > button {
+  background-color: #005aca;
+  padding: 7px 15px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#warp > header .right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#warp > header > div.right > div.user {
+  cursor: pointer;
+}
+
+#warp > nav {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+#warp > nav > button {
+  position: relative;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: white;
+}
+
+#warp > nav > .active {
+  background-color: #005aca;
+  color: white;
+}
+
+#warp > section {
+  display: flex;
+  gap: 20px;
+}
+
+#warp > section > div.main {
+  width: 67%;
+}
+
+#warp > section > div.main > div.hot_new {
+  display: flex;
+  gap: 20px;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+#warp > section > div.main > div.hot_new > div > div.detail > p {
+  display: inline;
+}
+
+#warp > section > div.main > div.hot_new > div > div.timer {
+  display: flex;
+  gap: 5px;
+  margin-top: 25px;
+}
+
+#warp > section > div.main > div.hot_new > div > div.comment {
+  display: inline;
+}
+
+#warp > section > div.main > div.hot_new > div > div.timer > div > i {
+  margin-left: 15px;
+}
+
+#warp > section > div.main > div.news_thoi_su {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#warp > section > div.main > div.news_thoi_su > div.line {
+  width: 100%;
+  height: 2px;
+  background-color: #005aca;
+}
+
+#warp > section > div.main > div.news_thoi_su > div.previews {
+  display: flex;
+  gap: 20px;
+}
+
+#warp > section > div.main > div.news_thoi_su > div.previews > div {
+  width: 31.2%;
+}
+
+#warp > section > div.main > div.news_thoi_su > div.previews > div > p {
+  margin-top: 3px;
+  font-weight: bold;
+}
+
+#warp > section > div.main > div.banner_bottom {
+  margin: 10px 0px 10px 10px;
+}
+
+#warp > section > div.banner_side {
+  width: 33%;
+  margin-right: 20px;
+}
+
+#warp > section > div.banner_side > img {
+  width: 100%;
+}
+
+#warp > section > div.banner_side > div > form {
+  border: 1px solid #005aca;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding: 20px 0px;
+  margin-top: 20px;
+}
+
+#warp > section > div.banner_side > div > form > div {
+  font-weight: bold;
+  color: #005aca;
+}
+
+#warp > section > div.banner_side > div > form > input[type="text"] {
+  outline: none;
+  border: 1px solid #005aca;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+#warp > section > div.banner_side > div > form > input[type="text"]::placeholder {
+  font-style: italic;
+}
+
+#warp > section > div.banner_side > div > form > button {
+  border: none;
+  padding: 5px 15px;
+  border-radius: 20px;
+
+  background-color: #005aca;
+  color: white;
+}
+
+#warp > footer {
+  display: flex;
+  background-color: #005aca;
+  color: white;
+  padding: 10px;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+#warp > footer >div {
+  width: 33.33%;
+}
+
+#warp > footer > div.center > nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#warp > footer > div.center > nav > button {
+  border: none;
+  background-color: #005aca;
+  color: white;
+  cursor: pointer;
+}
+
+#warp > footer > div.line {
+  height: 130px;
+  width: 1px;
+  background-color: white;
+}
+
+#warp > footer > div.right > div.map {
+  width: 90%;
+  height: 87%;
+  background-color: white;
+}
+
+#warp > nav > button.thoi_su > div.sub_menu {
+  position: absolute;
+  display: none;
+  background-color: #005ACA;
+  padding: 5px;
+  left: 0%;
+  gap: 10px;
+}
+
+#warp > nav > button.thoi_su.active > div.sub_menu > div {
+  cursor: pointer;
+}
+
+#warp > nav > button.thoi_su.active > .show {
+  display: flex;
+  flex-direction: column;
+}
