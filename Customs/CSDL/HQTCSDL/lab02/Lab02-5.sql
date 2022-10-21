@@ -67,7 +67,7 @@ as
 if update (MaLop)
 begin
     if not exists (select *
-    from LOP ,INSERTED
+    from LOP , INSERTED
     where LOP.MaLop=INSERTED.MaLop)
     begin
         print N'Mã lớp không có trong danh sách!'
@@ -84,7 +84,7 @@ as
 if update(MaLop)
 begin
     if not exists(select *
-    from LOP ,INSERTED
+    from LOP , INSERTED
     where LOP.MaLop=INSERTED.MaLop)
     rollback transaction
 else
@@ -108,7 +108,7 @@ as
 if update(MaLop)
 begin
     if not exists(select *
-    from LOP ,INSERTED
+    from LOP , INSERTED
     where LOP.MaLop=INSERTED.MaLop)
     rollback transaction
 else
@@ -125,3 +125,20 @@ else
         from INSERTED)
     end
 end
+
+declare @temp int, @diachi nvarchar(30)
+declare contro cursor for select *
+from SINHVIEN
+set @temp = 0
+open contro
+    fetch next from contro into @diachi
+    while @@fetch_status = 0
+    begin
+    if (@diachi like N'Lâm Đồng')
+        set @temp = @temp + 1
+end
+    print N'Số SV ở Lâm Đồng = ' + convert(nvarchar, @temp)
+close contro
+deallocate contro
+
+select count(*) from SINHVIEN

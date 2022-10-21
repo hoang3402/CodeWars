@@ -14,7 +14,7 @@ set DATEFORMAT DMY
 go
 create table KHOA
 (
-    MaKhoa varchar(10) primary key,
+    MaKhoa  varchar(10)  primary key,
     TenKhoa nvarchar(30)
 )
 
@@ -22,9 +22,9 @@ create table KHOA
 go
 create table NGANH
 (
-    MaNganh int primary key,
+    MaNganh  int          primary key,
     TenNganh nvarchar(30),
-    MaKhoa varchar(10),
+    MaKhoa   varchar(10),
     foreign key (MaKhoa) references KHOA(MaKhoa)
 )
 
@@ -32,11 +32,11 @@ create table NGANH
 go
 create table LOP
 (
-    MaLop varchar(10) primary key,
-    TenLop nvarchar(30),
-    MaNganh int,
-    KhoaHoc int,
-    HeDT varchar(10),
+    MaLop      varchar(10)  primary key,
+    TenLop     nvarchar(30),
+    MaNganh    int,
+    KhoaHoc    int,
+    HeDT       varchar(10),
     NamNhapHoc int,
     foreign key (MaNganh) references NGANH(MaNganh)
 )
@@ -45,12 +45,12 @@ create table LOP
 go
 create table SINHVIEN
 (
-    MaSV int primary key,
-    HoTen nvarchar(30),
-    MaLop varchar(10),
+    MaSV     int          primary key,
+    HoTen    nvarchar(30),
+    MaLop    varchar(10),
     GioiTinh nvarchar(5),
     NgaySinh date,
-    DiaChi nvarchar(30),
+    DiaChi   nvarchar(30),
     foreign key (MaLop) references LOP(MaLop)
 )
 
@@ -58,11 +58,11 @@ create table SINHVIEN
 go
 create table HOCPHAN
 (
-    MaHP int primary key,
-    TenHP nvarchar(30),
-    SoDVHT int,
+    MaHP    int          primary key,
+    TenHP   nvarchar(30),
+    SoDVHT  int,
     MaNganh int,
-    HocKy int,
+    HocKy   int,
     foreign key (MaNganh) references NGANH(MaNganh)
 )
 
@@ -70,8 +70,8 @@ create table HOCPHAN
 go
 create table DIEMHP
 (
-    MaSV int,
-    MaHP int,
+    MaSV   int,
+    MaHP   int,
     DiemHP float,
     foreign key (MaSV) references SINHVIEN(MaSV),
     foreign key (MaHP) references HOCPHAN(MaHP),
