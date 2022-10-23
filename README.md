@@ -27,3 +27,11 @@ Reset cache for fonts
 ```
 fc-cache -f -v
 ```
+
+## AI Assistant
+
+Kite
+
+```
+bash -c "$(wget -q -O - https://linux.kite.com/dls/linux/current)"
+```
