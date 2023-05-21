@@ -18,6 +18,21 @@ int maxSequence(const std::vector<int>& arr)
     return max_so_far;
 }
 
+// Base solution
+int maxSequenceSol(const std::vector<int>& arr)
+{
+    int current = 0;
+    int total = 0;
+
+    for(int x: arr){
+        current += x;
+        if(current < 0) current = 0;
+        if(current > total) total = current;
+    }
+
+    return total;
+}
+
 #include <vector>
 using namespace std;
 int maxSequence_2(const vector<int>& arr) noexcept
