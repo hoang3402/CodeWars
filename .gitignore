@@ -3,3 +3,4 @@ blazor/bin/*
 blazor/obj/*
 
 *.exe
+*.dev.js
