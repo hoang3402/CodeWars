@@ -1,3 +1,5 @@
 node_modules/*
 blazor/bin/*
 blazor/obj/*
+
+*.exe
