@@ -1,6 +1,7 @@
 node_modules/*
 blazor/bin/*
 blazor/obj/*
+.idea/*
 
 *.exe
 *.dev.js
