@@ -6,7 +6,7 @@
     "http-server": "http-server --proxy http://localhost:8080?"
   },
   "dependencies": {
-    "chai": "^4.4.0",
+    "chai": "^4.4.1",
     "http-server": "^14.1.1",
     "jest": "^29.0.0",
     "mocha": "^10.3.0"
