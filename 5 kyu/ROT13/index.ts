@@ -22,3 +22,10 @@ export function rot13(str: string): string {
 //     return str.replace(/[a-z]/gi, l => String.fromCharCode(l.charCodeAt(0) + (l.toLowerCase() <= 'm' ? 13 : -13)));
 // }
 
+// ---
+
+// function rot13(message) {
+//     var a = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+//     var b = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM"
+//     return message.replace(/[a-z]/gi, c => b[a.indexOf(c)])
+// }
