@@ -2,6 +2,8 @@
 
 Giải codewar :3
 
+[![CodeWar](https://www.codewars.com/users/hoang3409/badges/large)](www.codewars.com/r/ZUm-jQ)
+
 ## Code Install font ligature
 
 Fira Code
