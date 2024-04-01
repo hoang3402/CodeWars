@@ -43,3 +43,31 @@ string longest_palindrome(string input)
 
     return result;
 }
+
+// 
+
+#include<iostream>
+#include<string>
+
+using namespace std;
+
+string palindrome(string s, unsigned long i, unsigned long j) {
+    while ( i >= 0 && j < s.length() && s[i] == s[j])
+    {
+        i--;
+        j++;
+    }
+    return s.substr(i + 1, j  -1 - i);   
+}
+
+
+string longest_palindrome(string input){
+    string maxp = "";
+    for (int i = 0; i < input.length(); i++) {
+        string s1 = palindrome(input, i, i);
+        string s2 = palindrome(input, i, i + 1);
+        maxp = maxp.length() < s1.length() ? s1 : maxp;
+        maxp = maxp.length() < s2.length() ? s2 : maxp;
+    }
+    return maxp;
+}

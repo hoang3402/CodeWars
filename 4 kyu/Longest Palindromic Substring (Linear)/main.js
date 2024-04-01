@@ -1,32 +1,18 @@
-function is(a, b) {
-    return Math.abs(Math.abs(a) - Math.abs(b))
+function palindrome(s, i, j) {
+    while (i >= 0 && j < s.length && s[i] == s[j]) {
+        i--;
+        j++;
+    }
+    return s.substr(i + 1, j - 1 - i);
 }
 
-function solution(list) {
-    let end, result = "";
-    const length = list.length;
-
-    for (var i = 0; i < length; ++i) {
-        var temp_value = list[i];
-        end = i;
-
-        do {
-            if (is(++temp_value, list[++end]) == 1) {
-                break;
-            }
-            if (end >= length) break;
-        } while (temp_value + 1 == list[end + 1])
-
-        if (end - i == 1) {
-            result += `${list[i]},`
-            i = end - 1;
-        } else {
-            result += `${list[i]}-${list[end]},`
-            i = end;
-        }
-        if (i > length) break;
+function longest_palindrome(input) {
+    let maxp = "";
+    for (let i = 0; i < input.length; i++) {
+        let s1 = palindrome(input, i, i);
+        let s2 = palindrome(input, i, i + 1);
+        maxp = maxp.length < s1.length ? s1 : maxp;
+        maxp = maxp.length < s2.length ? s2 : maxp;
     }
-
-    result = result.slice(0, -1);
-    return result;
+    return maxp;
 }
