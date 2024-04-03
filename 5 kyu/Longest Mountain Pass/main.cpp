@@ -4,37 +4,39 @@
 
 std::pair<int, int> longest_mountain_pass(const std::vector<int>& mountains, int energy)
 {
-    if (mountains.size() < 2) {
+    int n = mountains.size();
+    if (n < 2) {
         return { 0, 0 };
     }
-    unsigned long max_length = 1;
-    unsigned long start_index = 128;
 
-    for (unsigned long i = 0; i < mountains.size() - 1; ++i) {
-        int _energy = energy;
-        unsigned long j = i;
-        unsigned long step = 0;
-        while (j < mountains.size() && _energy >= 0) {
-            if (mountains[j] < mountains[j + 1]) {
-                _energy -= mountains[j + 1] - mountains[j];
-                step++;
-                if (_energy < 0) {
-                    break;
+    int max_length = 0;
+    int start_index = 0;
+
+    std::vector<int> energy_cost(n, 0);
+
+    for (int i = 0; i < n; i++) {
+        energy_cost[i] = std::max(mountains[i + 1] - mountains[i], 0);
+    }
+
+    for (int i = 0; i < n; ++i) {
+        int current_energy = energy;
+        int length = 1; // A pass of at least one mountain is always possible
+
+        for (int j = i + 1; j < n && current_energy > -1; ++j) {
+            if (energy_cost[j - 1] > 0) { // Going uphill
+                if (current_energy < energy_cost[j - 1]) {
+                    break; // Not enough energy to climb
                 }
+                current_energy -= energy_cost[j - 1];
             }
-            if (mountains[j] >= mountains[j + 1]) {
-                step++;
-            }
-            j++;
+            length++;
         }
-        if (step > max_length) {
-            max_length = step;
+
+        if (length > max_length) {
+            max_length = length;
             start_index = i;
-        }
-        if (step >= mountains.size() - 1) {
-            break;
         }
     }
 
-    return { max_length, start_index == 128 ? 0 : start_index };
+    return { max_length, start_index };
 }

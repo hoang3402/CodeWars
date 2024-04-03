@@ -1,5 +1,6 @@
 {
     "files.associations": {
+        "*.sass": "scss",
         "*.embeddedhtml": "html",
         "iostream": "cpp",
         "deque": "cpp",
@@ -77,7 +78,16 @@
         "variant": "cpp",
         "compare": "cpp",
         "concepts": "cpp",
-        "numbers": "cpp"
+        "numbers": "cpp",
+        "barrier": "cpp",
+        "coroutine": "cpp",
+        "source_location": "cpp",
+        "latch": "cpp",
+        "ranges": "cpp",
+        "semaphore": "cpp",
+        "span": "cpp",
+        "stop_token": "cpp",
+        "syncstream": "cpp"
     },
     "compile-hero.disable-compile-files-on-did-save-code": true,
     "livePreview.defaultPreviewPath": "/workspaces/CodeWars/ThietKeWeb/BTLab1/index.html",
